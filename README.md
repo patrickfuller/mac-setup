@@ -66,6 +66,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Open iterm2, and set some options to enable terminal overlay:
 
  * iTerm2 -> Preferences
+ * General -> Quit when all windows are closed
  * Appearance -> Auto-hide menu bar in non-native fullscreen
  * Profiles -> Text -> Font -> 14pt Source Code Pro
  * Profiles -> Text -> Cursor -> Vertical bar

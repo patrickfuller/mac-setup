@@ -84,7 +84,7 @@ Applications
 Use `brew cask` whenever possible. Using it inconsistently negates its benefits.
 
 ```
-brew cask install atom dropbox nordvpn microsoft-office spotify google-chrome github
+brew cask install atom dropbox nordvpn microsoft-office spotify google-chrome github blender
 ```
 
 Log in to each program and set up as needed.

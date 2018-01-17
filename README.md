@@ -95,7 +95,8 @@ Python Development Config
 Install linters and ipython terminal.
 
 ```
-conda install flake8 flake8-pep257 flake8-naming ipython
+conda install flake8 pep8-naming ipython
+pip install flake8-docstrings
 ```
 
 In atom, install `linter-flake8`.

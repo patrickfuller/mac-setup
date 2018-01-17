@@ -1,0 +1,21 @@
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 700x550+49+46
+[user]
+	email = patrickfuller@gmail.com
+	name = Patrick Fuller
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
+[push]
+	default = simple
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+[credential]
+	helper = store
+[branch]
+	autosetuprebase = always

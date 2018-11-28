@@ -26,11 +26,10 @@ Homebrew for most items. Includes applications through `brew cask`.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Conda for user-level python environments.
+Conda for user-level python environments, through brew cask to establish hierarchy.
 
 ```
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-MacOSX-x86_64.sh
+brew cask install anaconda
 ```
 
 Dotfiles

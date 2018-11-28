@@ -59,10 +59,7 @@ source $ZSH/oh-my-zsh.sh
 alias ports="sudo netstat -tulpn"
 
 # For conda
-export CONDA=$HOME/miniconda3
-export PATH=$CONDA/bin:$PATH
-export CMAKE_LIBRARY_PATH=$CONDA/lib:$CONDA/bin
-export CMAKE_INCLUDE_PATH=$CONDA/include
+export PATH=/usr/local/anaconda3/bin:$PATH
 
 # zsh-syntax-highlighting through homebrew
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

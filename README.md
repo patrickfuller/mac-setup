@@ -29,7 +29,7 @@ Homebrew for most items. Includes applications through `brew cask`.
 Conda for user-level python environments, through brew cask to establish hierarchy.
 
 ```
-brew cask install anaconda
+brew cask install miniconda
 ```
 
 Dotfiles

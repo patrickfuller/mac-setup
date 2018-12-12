@@ -36,7 +36,7 @@ set wildmode=longest:full
 set wildmenu                  " menu has tab completion
 set laststatus=2
 set cursorline                " Highlights current line
-hi CursorLine term=none cterm=none ctermbg=4
+hi CursorLine term=none cterm=none ctermbg=DarkGray
 
 " Colors column 80
 set cc=80

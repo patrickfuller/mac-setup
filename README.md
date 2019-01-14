@@ -104,7 +104,7 @@ Applications
 Use `brew cask` whenever possible. Using it inconsistently negates its benefits.
 
 ```
-brew cask install atom dropbox nordvpn microsoft-office spotify google-chrome github blender
+brew cask install atom dropbox nordvpn microsoft-office spotify google-chrome github blender gimp xquartz inkscape
 ```
 
 Log in to each program and set up as needed.
@@ -147,3 +147,27 @@ Start by removing everything from the dock. Add:
 
 Optionally, add Spotify, iMessage, FaceTime, iPhoto.
 
+Windows Virtual Machine
+-----------------------
+
+I use Parallels for one-off windows-only software.
+
+```
+brew cask install parallels
+```
+
+Open and run through install. Log in to Parallels account.
+
+Next, download whatever Windows-only software you need to run. My example is
+[ClickPLC](https://support.automationdirect.com/products/clickplcs.html). I'm
+including notes below that can be adapted to other software.
+
+ * The ClickPLC software needs direct LAN access. Done with `Devices -> Network -> Bridged -> Wi-Fi`.
+ * Once running, I like having it as a docked application. Lock the program to your dock and use `View -> Enter Coherence` to make it feel like a native app.
+ * The default name and logo are ugly.
+   - Downloaded [this image](https://cdn.automationdirect.com/images/products/large/l_c011dred.jpg).
+   - Opened in GIMP, added alpha channel, and white to transparent with magic wand.
+   - [This is poorly documented](https://discussions.apple.com/thread/8562625), but non-square images come out terrible on newer Macs. Close crop a square and export when done.
+   - Open the current icon by right clicking in dock, `Options -> Show in Finder`. Right click icon, `Get Info`.
+   - [The other trick](https://superuser.com/questions/605830/mac-get-info-always-showing-png-icon-instead-of-the-icon) is you need to copy-paste the image contents rather than the files. Open the exported image, select all, copy. Open the Info tab on the icon, left click the icon, then `Edit -> Paste`.
+   - I also changed the name from `CLICK Programming Software Ver 2.30` to `ClickPLC`. I have no idea why people do these things.

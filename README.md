@@ -115,9 +115,8 @@ Python Development Config
 Install linters and ipython terminal.
 
 ```
-conda install flake8 pep8-naming ipython
-pip install flake8-docstrings
-apm install linter-flake8 minimap
+conda install flake8 pep8-naming pycodestyle pydocstyle ipython
+apm install linter-flake8 linter-pydocstyle minimap
 ```
 
 SSH Config

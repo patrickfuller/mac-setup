@@ -112,11 +112,11 @@ Log in to each program and set up as needed.
 Python Development Config
 -------------------------
 
-Install linters and ipython terminal.
+Install linters, ipython terminal, atom packages.
 
 ```
 conda install flake8 pep8-naming pycodestyle pydocstyle ipython
-apm install linter-flake8 linter-pydocstyle minimap
+apm install atom-ide-ui atom-ide-debugger-python autocomplete-python Sublime-Style-Column-Selection minimap
 ```
 
 SSH Config

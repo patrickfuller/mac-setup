@@ -115,7 +115,7 @@ Python Development Config
 Install linters, ipython terminal, atom packages.
 
 ```
-conda install flake8 pep8-naming pycodestyle pydocstyle ipython
+conda install flake8 pep8-naming pycodestyle pydocstyle ipython twine
 apm install linter linter-ui-default intentions busy-signal linter-flake8 linter-pydocstyle minimap autocomplete-python Sublime-Style-Column-Selection auto-detect-indentation
 ```
 

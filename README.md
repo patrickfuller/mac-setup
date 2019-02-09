@@ -116,8 +116,10 @@ Install linters, ipython terminal, atom packages.
 
 ```
 conda install flake8 pep8-naming pycodestyle pydocstyle ipython
-apm install atom-ide-ui atom-ide-debugger-python autocomplete-python Sublime-Style-Column-Selection minimap
+apm install linter linter-ui-default intentions busy-signal linter-flake8 linter-pydocstyle minimap autocomplete-python Sublime-Style-Column-Selection auto-detect-indentation
 ```
+
+In Atom's Preferences, select `Editor->Show Invisibles` and `Editor->Show Indent Guide`.
 
 SSH Config
 ----------

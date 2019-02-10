@@ -121,6 +121,18 @@ apm install linter linter-ui-default intentions busy-signal linter-flake8 linter
 
 In Atom's Preferences, select `Editor->Show Invisibles` and `Editor->Show Indent Guide`.
 
+Web Development Config
+----------------------
+
+Install eslint, scss, and scss linting.
+
+```
+brew install eslint
+gem install sass scss_lint
+apm install linter-eslint linter-scss-lint
+```
+
+
 SSH Config
 ----------
 

@@ -128,8 +128,8 @@ Install eslint, scss, and scss linting.
 
 ```
 brew install eslint
-gem install sass scss_lint
-apm install linter-eslint linter-scss-lint
+npm install -g stylelint
+apm install linter-eslint linter-stylelint
 ```
 
 

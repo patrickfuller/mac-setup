@@ -115,8 +115,8 @@ Python Development Config
 Install linters, ipython terminal, atom packages.
 
 ```
-conda install flake8 pep8-naming pycodestyle pydocstyle ipython twine
-apm install linter linter-ui-default intentions busy-signal linter-flake8 linter-pydocstyle minimap autocomplete-python Sublime-Style-Column-Selection auto-detect-indentation
+conda install flake8 pep8-naming pycodestyle pydocstyle flake8-docstrings ipython twine
+apm install linter linter-ui-default intentions busy-signal linter-flake8 minimap autocomplete-python Sublime-Style-Column-Selection auto-detect-indentation
 ```
 
 In Atom's Preferences, select `Editor->Show Invisibles` and `Editor->Show Indent Guide`.

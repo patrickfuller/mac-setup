@@ -58,6 +58,9 @@ source $ZSH/oh-my-zsh.sh
 # because I can't memorize this shit
 alias ports="sudo netstat -tulpn"
 
+# Mac only but very useful
+alias merge-pdf="\"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py\" -o merged.pdf"
+
 # For conda
 export PATH=/usr/local/miniconda3/bin:$PATH
 

@@ -60,6 +60,8 @@ alias ports="sudo netstat -tulpn"
 
 # Mac only but very useful
 alias merge-pdf="\"/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py\" -o merged.pdf"
+# Needs LibreOffice but useful in conjunction with merging
+alias doc-to-pdf="/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf"
 
 # For conda
 export PATH=/usr/local/miniconda3/bin:$PATH

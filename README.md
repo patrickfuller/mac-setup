@@ -51,7 +51,7 @@ Start with a better terminal to make the other installs more pleasant.
 brew cask install iterm2
 
 # Better font for terminal
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-source-code-pro
 
 # oh-my-zsh for easy zsh install

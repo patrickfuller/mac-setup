@@ -78,7 +78,8 @@ Close out of all terminals, open iterm2. alt+enter should show/hide full-screen 
 Add basic tools and perks.
 
 ```
-brew install vim zsh git wget zsh-syntax-highlighting diff-so-fancy
+brew install vim zsh git wget diff-so-fancy
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 Touch ID

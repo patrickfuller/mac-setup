@@ -64,7 +64,7 @@ alias merge-pdf="\"/System/Library/Automator/Combine PDF Pages.action/Contents/R
 alias doc-to-pdf="/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf"
 
 # For conda
-export PATH=/usr/local/miniconda3/bin:$PATH
+export PATH=/opt/miniconda3/bin:$PATH
 
 # zsh-syntax-highlighting through homebrew
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

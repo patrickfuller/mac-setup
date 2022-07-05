@@ -105,7 +105,7 @@ Applications
 Use `brew cask` whenever possible. Using it inconsistently negates its benefits.
 
 ```
-brew cask install atom dropbox nordvpn microsoft-office spotify google-chrome github blender gimp xquartz inkscape
+brew cask install visual-studio-code dropbox nordvpn microsoft-office spotify google-chrome github blender gimp xquartz inkscape
 ```
 
 Log in to each program and set up as needed.
@@ -118,22 +118,9 @@ Install linters, ipython terminal, atom packages.
 ```
 conda install flake8 pep8-naming pycodestyle pydocstyle ipython twine
 pip install flake8-docstrings
-apm install linter linter-ui-default intentions busy-signal linter-flake8 minimap autocomplete-python Sublime-Style-Column-Selection auto-detect-indentation
 ```
 
-In Atom's Preferences, select `Editor->Show Invisibles` and `Editor->Show Indent Guide`.
-
-Web Development Config
-----------------------
-
-Install eslint, scss, and scss linting.
-
-```
-brew install eslint
-npm install -g stylelint
-apm install linter-eslint linter-stylelint
-```
-
+In VSCode, go to Code -> Preferences -> Extensions and install linters, language support, and anything else you find relevant.
 
 SSH Config
 ----------
@@ -158,7 +145,7 @@ Start by removing everything from the dock. Add:
  * Chrome
  * MS Word, Excel, Powerpoint
  * iTerm
- * Atom, Github
+ * VSCode, Github
 
 Optionally, add Spotify, iMessage, FaceTime, iPhoto.
 

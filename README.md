@@ -15,31 +15,17 @@ Mac System Preferences:
  * Dock -> Disable show recent applications
  * Displays -> Night Shift -> enable
 
-Multiple desktops and window snapping:
+Multiple desktops:
  * Make four desktops by swiping up with three fingers, clicking the "add" button in the top right, then swiping back down. Use three-finger left-right swipe to switch between desktops.
- * Install BetterSnapTool through the App Store. In settings, enable snap left, right, and full. Hotkey to ctrl+alt+left/right/up.
 
-Package managers
-----------------
+Package manager
+---------------
 
 Homebrew for most items. Includes applications through `brew cask`.
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
-Conda for user-level python environments, through brew cask to establish hierarchy.
-
-```
-brew cask install miniconda
-```
-
-Dotfiles
---------
-
-Copy `.zshrc`, `.vimrc`, and `.gitconfig` to home directory. This is a starting-point config that should be edited as desired.
-
-Change user and email in `.gitconfig`. Also consider setting up a `.git-credentials` if you have an HTTP key.
 
 Terminal
 --------
@@ -47,12 +33,8 @@ Terminal
 Start with a better terminal to make the other installs more pleasant.
 
 ```
-# Mac-based terminal emulator
-brew cask install iterm2
-
-# Better font for terminal
-brew tap homebrew/cask-fonts
-brew cask install font-source-code-pro
+# Mac-based terminal emulator + font
+brew install iterm2 font-source-code-pro
 
 # oh-my-zsh for easy zsh install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -60,11 +42,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Open iterm2, and set some options to enable terminal overlay:
 
- * iTerm2 -> Preferences
- * General -> Quit when all windows are closed
- * General -> Disable Native full screen windows
- * Appearance -> Auto-hide menu bar in non-native fullscreen
- * Profiles -> Text -> Font -> 14pt Source Code Pro
+ * iTerm2 -> Settings
+ * General -> Closing -> Quit when all windows are closed
+ * General -> Window -> Uncheck Native full screen windows
+ * Profiles -> Text -> Font -> 16pt Source Code Pro
  * Profiles -> Text -> Cursor -> Vertical bar
  * Profiles -> Colors -> Color Presets -> Tango Dark
  * Profiles -> Window -> Transparency -> 1/3 transparent
@@ -78,8 +59,21 @@ Close out of all terminals, open iterm2. alt+enter should show/hide full-screen 
 Add basic tools and perks.
 
 ```
-brew install vim zsh git wget diff-so-fancy
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+brew install vim zsh git wget diff-so-fancy zsh-syntax-highlighting
+```
+
+Dotfiles
+--------
+
+Copy `.zshrc`, `.vimrc`, and `.gitconfig` to home directory. This is a starting-point config that should be edited as desired.
+
+Change user and email in `.gitconfig`. Also consider setting up a `.git-credentials` if you have an HTTP key.
+
+Python
+------
+
+```
+brew install miniconda
 ```
 
 Touch ID
@@ -94,18 +88,16 @@ Follow [this SO post](https://apple.stackexchange.com/a/306324/43814) to allow
 Touch ID to enable permission elevation.
 
 ```
-sudo su -
-vi /etc/pam.d/sudo
-# add "auth       sufficient     pam_tid.so" to top row
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 ```
 
 Applications
 ------------
 
-Use `brew cask` whenever possible. Using it inconsistently negates its benefits.
+Use `brew` whenever possible. Using it inconsistently negates its benefits.
 
 ```
-brew cask install visual-studio-code dropbox nordvpn microsoft-office spotify google-chrome github blender gimp xquartz inkscape
+brew install visual-studio-code microsoft-office spotify google-chrome github
 ```
 
 Log in to each program and set up as needed.
@@ -120,7 +112,7 @@ conda install flake8 pep8-naming pycodestyle pydocstyle ipython twine
 pip install flake8-docstrings
 ```
 
-In VSCode, go to Code -> Preferences -> Extensions and install linters, language support, and anything else you find relevant.
+In VSCode, go to Extensions and install linters, language support, and anything else you find relevant.
 
 SSH Config
 ----------
